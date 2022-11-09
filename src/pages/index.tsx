@@ -20,6 +20,7 @@ export default function Home() {
       </Head>
 
       <main className='flex items-center justify-center'>
+        <Card />
 
         {t("greeting")}
       </main>
@@ -30,13 +31,14 @@ export default function Home() {
 
 
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { Card } from '../components/Card';
 
 // export default function Home...
 
 export async function getStaticProps({ locale }: any) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common", "home"])),
+      ...(await serverSideTranslations(locale, ["common", "home", "header"])),
       // Will be passed to the page component as props
     },
   };
