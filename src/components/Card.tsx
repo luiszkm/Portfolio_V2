@@ -1,25 +1,34 @@
+import { useTranslation } from 'next-i18next';
+import { useRouter } from 'next/router'
 import { AiFillGithub, AiOutlineLinkedin, AiOutlineInstagram, AiOutlineFileDone } from 'react-icons/ai'
+import { HiLocationMarker} from 'react-icons/hi'
 import { Avatar } from './Avatar'
+import { Stacks } from './Stacks';
 
 
 
 export function Card() {
+
+  const { t } = useTranslation("common");
+
+
   return (
-    <div>
+    <div className='w-full h-80 flex flex-col items-center rounded-2xl border-2 border-black'>
       <Avatar />
+
       <div className='flex flex-col'>
-      <span>Desenvolvedor Web <span>JavaScrip</span>|<span>TypeScript</span>  </span>
+      <span>{t("role")} <span>JavaScrip</span>|<span>TypeScript</span>  </span>
       
       </div>
      
+    <span className='flex items-center gap-4'><HiLocationMarker /> {t("location")} </span>
 
-
-
-      <nav className='flex items-center gap-4'>
-        <a href="#"><AiFillGithub /></a>
-        <a href="#"><AiOutlineLinkedin /></a>
-        <a href="#"><AiOutlineInstagram /></a>
-        <a href="#"><AiOutlineFileDone /></a>
+    <Stacks />
+      <nav className=' w-full flex items-center justify-center gap-4 border-t-2 border-black'>
+        <a href="#" className='hover:animate-bounce'><AiFillGithub /></a>
+        <a href="#" className='hover:animate-bounce'><AiOutlineLinkedin /></a>
+        <a href="#" className='hover:animate-bounce'><AiOutlineInstagram /></a>
+        <a href="#" className='hover:animate-bounce'><AiOutlineFileDone /></a>
       </nav>
     </div>
   )
