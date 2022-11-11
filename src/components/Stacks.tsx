@@ -3,7 +3,7 @@ import { SiTypescript, SiJavascript, SiTailwindcss, SiHtml5, SiCss3, SiStyledcom
 export function Stacks() {
 
   return (
-    <div className='flex gap-4'>
+    <div className='flex gap-4 w-full flex-wrap items-center  justify-center '>
 
       <div>
         <SiTypescript className='hover:animate-pulse' size={24}

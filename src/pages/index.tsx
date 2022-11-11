@@ -19,10 +19,9 @@ export default function Home() {
         <title>DevSoares</title>
       </Head>
 
-      <main className='flex items-center justify-center'>
+      <main className='flex items-center justify-center px-5'>
         <Card />
 
-        {t("greeting")}
       </main>
 
     </>

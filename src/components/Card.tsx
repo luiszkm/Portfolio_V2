@@ -13,7 +13,7 @@ export function Card() {
 
 
   return (
-    <div className='w-full h-80 flex flex-col items-center rounded-2xl border-2 border-black'>
+    <div className='w-full max-w-sm p-7 h-[480px] flex flex-col items-center rounded-2xl border-2 border-black'>
       <Avatar />
 
       <div className='flex flex-col'>
