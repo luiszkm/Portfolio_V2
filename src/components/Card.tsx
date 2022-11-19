@@ -24,10 +24,10 @@ export function Card() {
 
       <Stacks />
       <nav className=' w-full flex items-center justify-center py-2 gap-4 border-t-2 border-black'>
-        <a href="https://github.com/luiszkm" className='hover:animate-bounce' target={'_blank'}><AiFillGithub size={24} /></a>
-        <a href="https://www.linkedin.com/in/luis-soares-64b0a6227/" className='hover:animate-bounce' target={'_blank'}><AiOutlineLinkedin size={24} /></a>
-        <a href="https://www.instagram.com/luis_yoshi/?next=%2F" className='hover:animate-bounce' target={'_blank'}><AiOutlineInstagram size={24} /></a>
-        <a href="#" className='hover:animate-bounce' target={'_blank'}><AiOutlineFileDone size={24} /></a>
+        <a href="https://github.com/luiszkm" className='hover:animate-bounce' target="_blank"><AiFillGithub size={24} /></a>
+        <a href="https://www.linkedin.com/in/luis-soares-64b0a6227/" className='hover:animate-bounce' target="_blank"><AiOutlineLinkedin size={24} /></a>
+        <a href="https://www.instagram.com/luis_yoshi/?next=%2F" className='hover:animate-bounce' target="_blank"><AiOutlineInstagram size={24} /></a>
+        <a href="#" className='hover:animate-bounce' target="_blank"><AiOutlineFileDone size={24} /></a>
       </nav>
     </div>
   )

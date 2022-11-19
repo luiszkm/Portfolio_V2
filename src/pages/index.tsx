@@ -19,14 +19,16 @@ export default function Home() {
         <title>DevSoares</title>
       </Head>
 
-      <main className='flex flex-col gap-4 items-center justify-center px-5 relative'>
-        <img className='absolute top-0 w-full object-fill h-40'
-         src="https://w0.peakpx.com/wallpaper/963/804/HD-wallpaper-programmer-eat-sleep-code-repeat.jpg" alt="" />
-        <Card />
-        <About/>
-        <section>
-          <MainProjects />
+      <main className='flex flex-col gap-4 max-w-7xl mx-auto items-center justify-center px-5 '>
+
+        <img className='absolute top-10 w-full object-fill h-40'
+          src="https://w0.peakpx.com/wallpaper/963/804/HD-wallpaper-programmer-eat-sleep-code-repeat.jpg" alt="" />
+          
+        <section className='flex flex-col gap-5 md:flex-row'>
+          <Card />
+          <About />
         </section>
+        <MainProjects />
 
       </main>
 
