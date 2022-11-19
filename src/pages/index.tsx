@@ -19,8 +19,14 @@ export default function Home() {
         <title>DevSoares</title>
       </Head>
 
-      <main className='flex items-center justify-center px-5'>
+      <main className='flex flex-col gap-4 items-center justify-center px-5 relative'>
+        <img className='absolute top-0 w-full object-fill h-40'
+         src="https://w0.peakpx.com/wallpaper/963/804/HD-wallpaper-programmer-eat-sleep-code-repeat.jpg" alt="" />
         <Card />
+        <About/>
+        <section>
+          <MainProjects />
+        </section>
 
       </main>
 
@@ -31,6 +37,8 @@ export default function Home() {
 
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { Card } from '../components/Card';
+import { About } from '../components/About';
+import { MainProjects } from '../components/MainProjects';
 
 // export default function Home...
 
