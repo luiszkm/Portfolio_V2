@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Button } from "./Button";
 
 
@@ -5,10 +6,10 @@ import { Button } from "./Button";
 export function MainProjects() {
 
   return (
-    <div className="w-full  flex flex-col items-center ">
+    <div className="w-full max-w-xl  flex flex-col items-center ">
 
-      <img className="rounded-t-2xl w-full h-64"
-       src="https://raw.githubusercontent.com/luiszkm/Portfolio/main/src/assets/Cover-RocktNotes.png?token=GHSAT0AAAAAAB3GJ2EPSN42WCHKDN5JKGSYY3ZLXEA" alt="" />
+      <Image className="rounded-t-2xl w-full h-64" width={265} height={256}
+       src="https://portfolioluis.s3.sa-east-1.amazonaws.com/Cover-RocktNotes.png" alt="" />
 
 
       <div className="w-full flex flex-col items-center gap-4 p-3 border-black border-2 rounded-b-2xl">

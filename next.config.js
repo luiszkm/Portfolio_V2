@@ -13,7 +13,12 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'github.com' || 'aws.amazon.com',
+        hostname: 'github.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'portfolioluis.s3.sa-east-1.amazonaws.com',
         pathname: '/**',
       },
     ],
