@@ -17,13 +17,15 @@ export default function Home() {
     <>
       <Head>
         <title>DevSoares</title>
+        <meta name="description" content="Luis is a web developer with 1 year of experience in the market, focused on typescript, javascript, react, node, sql, html and css
+"></meta>
       </Head>
 
       <main className='flex flex-col gap-4 max-w-7xl mx-auto items-center justify-center px-5 '>
 
         <img className='absolute top-10 w-full object-fill h-40'
           src="https://w0.peakpx.com/wallpaper/963/804/HD-wallpaper-programmer-eat-sleep-code-repeat.jpg" alt="" />
-          
+
         <section className='flex flex-col gap-5 md:flex-row'>
           <Card />
           <About />

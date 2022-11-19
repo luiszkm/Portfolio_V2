@@ -8,7 +8,16 @@ const nextConfig = {
   i18n: {
     locales: ['pt-BR', 'en-US'],
     defaultLocale: 'pt-BR',
-  }
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'github.com' || 'aws.amazon.com',
+        pathname: '/**',
+      },
+    ],
+  },
 
 }
 
