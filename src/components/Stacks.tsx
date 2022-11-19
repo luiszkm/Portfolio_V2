@@ -3,7 +3,7 @@ import { SiTypescript, SiJavascript, SiTailwindcss, SiHtml5, SiCss3, SiStyledcom
 export function Stacks() {
 
   return (
-    <div className='flex gap-4 w-full flex-wrap items-center  justify-center relative ' >
+    <div className='flex gap-4 w-full flex-wrap items-center py-4  justify-center relative ' >
 
       <div className='w-8 h-8 flex items-center justify-center relative  rounded-lg hover:bottom-1'>
         <img title="TypeScript" src="https://xesque.rocketseat.dev/platform/tech/typescript.svg" alt="TypeScript"></img>

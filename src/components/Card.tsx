@@ -15,10 +15,9 @@ export function Card() {
   return (
     <div className='w-full max-w-sm p-7 h-[480px] flex flex-col items-center justify-between rounded-2xl border-2 border-black'>
       <Avatar />
-
-      <div className='flex flex-col'>
-        <span>{t("role")} <span>JavaScrip</span>|<span>TypeScript</span>  </span>
-
+    <strong>Luis Soares</strong>
+      <div className='flex flex-col items-center'>
+        <span className='flex flex-col items-center'>{t("role")} <span>JavaScript</span> </span>
       </div>
 
       <span className='flex items-center gap-4'><HiLocationMarker /> {t("location")} </span>
