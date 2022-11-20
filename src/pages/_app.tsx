@@ -1,6 +1,5 @@
 import type { AppProps } from 'next/app'
 import { appWithTranslation } from "next-i18next";
-import { Analytics } from '@vercel/analytics/react';
 
 
 import { Footer } from '../components/Footer'
@@ -14,8 +13,6 @@ function MyApp({ Component, pageProps }: AppProps) {
     <div className=' min-h-screen w-full flex flex-col justify-between'>
       <Header />
       <Component {...pageProps} />
-      <Analytics />
-
       <Footer />
     </div>
   )

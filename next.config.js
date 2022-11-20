@@ -21,6 +21,11 @@ const nextConfig = {
         hostname: 'portfolioluis.s3.sa-east-1.amazonaws.com',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: '/xesque.rocketseat.dev',
+        pathname: '/**',
+      },
     ],
   },
 

@@ -1,13 +1,13 @@
 import { NavMenu } from "./NavMenu";
 
-import { useRouter } from 'next/router'
 import { LanguageSwitcher } from "./languageSwitcher";
 import { DarkMode } from "./DarkMode";
+import { useTranslation } from "next-i18next";
 
 
 export function Header() {
 
-  const { locales } = useRouter()
+  const { t } = useTranslation("header");
 
 
   return (
@@ -16,6 +16,15 @@ export function Header() {
         <DarkMode />
         <LanguageSwitcher />
       </div>
+      <nav className="hidden md:flex">
+            <ul className='flex gap-6 text-center cursor-pointer'>
+              <li className='hover:text-white'>{t("about")}</li>
+              <li className='hover:text-white'>{t("skills")}</li>
+              <li className='hover:text-white'>{t("hobbies")}</li>
+              <li className='hover:text-white'>{t("formation")}</li>
+              <li className='hover:text-white'>{t("projects")}</li>
+            </ul>
+          </nav>
       <NavMenu />
     </header>
   )

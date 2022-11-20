@@ -16,13 +16,13 @@ export function NavMenu() {
   }
   
   return (
-    <div>
+    <div >
       {!showMenu ?
-        <div>
+        <div className='md:hidden '>
           <GiHamburgerMenu className='cursor-pointer' onClick={() => setShowMenu(true)} />
         </div> :
         <div>
-          <nav className="w-full min-h-screen absolute top-0 left-0 bg-cyan-500 flex justify-center items-start py-16 z-20   ">
+          <nav className="w-full min-h-screen absolute top-0 left-0 bg-cyan-500 flex justify-center items-start py-16 z-20  ">
           <AiOutlineClose className='cursor-pointer absolute top-3 right-3' onClick={() => setShowMenu(false)} />
             <ul className='flex flex-col gap-4 text-center cursor-pointer'>
               <li className='hover:text-white'>{t("about")}</li>
