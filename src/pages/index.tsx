@@ -23,8 +23,8 @@ export default function Home() {
 
       <main className='flex flex-col gap-4 max-w-7xl mx-auto items-center justify-center px-5 '>
 
-        <img className='absolute top-10 w-full object-fill h-40'
-          src="https://w0.peakpx.com/wallpaper/963/804/HD-wallpaper-programmer-eat-sleep-code-repeat.jpg" alt="" />
+        <img className='absolute top-10 w-full h-44 object-cover md:object-fill '
+          src="https://portfolioluis.s3.sa-east-1.amazonaws.com/banner.png" alt="banner das stacks utilizadas" />
 
         <section className='flex flex-col gap-5 md:flex-row'>
           <Card />
@@ -43,6 +43,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { Card } from '../components/Card';
 import { About } from '../components/About';
 import { MainProjects } from '../components/MainProjects';
+import Image from 'next/image';
 
 // export default function Home...
 

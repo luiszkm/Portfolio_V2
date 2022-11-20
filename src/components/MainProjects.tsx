@@ -8,7 +8,7 @@ export function MainProjects() {
   return (
     <div className="w-full max-w-xl  flex flex-col items-center ">
 
-      <Image className="rounded-t-2xl w-full h-64" width={265} height={256}
+      <img className="rounded-t-2xl object-fill w-full h-64" width={265} height={256}
        src="https://portfolioluis.s3.sa-east-1.amazonaws.com/Cover-RocktNotes.png" alt="" />
 
 

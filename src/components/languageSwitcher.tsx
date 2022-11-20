@@ -19,12 +19,12 @@ export function LanguageSwitcher() {
 
       <img className={enActive ? "opacity-20 cursor-pointer" : ""}
         src="https://img.icons8.com/color/32/null/brazil.png"
-        alt="Bandeira do brasil" title="Pt-BR"
+        alt="Bandeira do brasil" title="Pt-BR" width={32} height={32}
         onClick={() => handleLocaleChange('pt-BR')} />
 
       <img className={enActive ? "" : "opacity-20 cursor-pointer"}
         src="https://img.icons8.com/color/32/null/usa.png"
-        alt="Bandeira do brasil" title="Pt-BR"
+        alt="Bandeira do EUA" title="Pt-BR"  width={32} height={32}
         onClick={() => handleLocaleChange('en-US')} />
 
     </div>
