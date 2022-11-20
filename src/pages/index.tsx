@@ -1,24 +1,12 @@
-import type { NextPage } from 'next'
-
 import Head from 'next/head'
-import { useRouter } from 'next/router';
-
-import { useTranslation } from "next-i18next";
-
-
 
 export default function Home() {
-
-  const { locale } = useRouter();
-  const { t } = useTranslation("home");
-
 
   return (
     <>
       <Head>
         <title>DevSoares</title>
-        <meta name="description" content="Luis is a web developer with 1 year of experience in the market, focused on typescript, javascript, react, node, sql, html and css
-"></meta>
+        <meta name="description" content="Luis is a web developer with 1 year of experience in the market, focused on typescript, javascript, react, node, sql, html and css"></meta>
       </Head>
 
       <main className='flex flex-col gap-4 max-w-7xl mx-auto items-center justify-center px-5 '>
@@ -31,9 +19,7 @@ export default function Home() {
           <About />
         </section>
         <MainProjects />
-
       </main>
-
     </>
   )
 }
