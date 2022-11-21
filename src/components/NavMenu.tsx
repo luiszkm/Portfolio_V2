@@ -27,7 +27,6 @@ export function NavMenu() {
             <ul className='flex flex-col gap-4 text-center cursor-pointer'>
               <li className='hover:text-white'>{t("about")}</li>
               <li className='hover:text-white'>{t("skills")}</li>
-              <li className='hover:text-white'>{t("hobbies")}</li>
               <li className='hover:text-white'>{t("formation")}</li>
               <li className='hover:text-white'>{t("projects")}</li>
             </ul>

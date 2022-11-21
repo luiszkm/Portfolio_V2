@@ -13,7 +13,7 @@ export function Card() {
 
 
   return (
-    <div className='w-full max-w-sm p-7 h-[480px] z-10 mt-28 flex flex-col items-center justify-between rounded-2xl border-2 border-black'>
+    <div className='w-full max-w-sm p-7 h-[480px] z-10 mt-36 flex flex-col items-center justify-between rounded-2xl border-2 border-black'>
       <Avatar />
       <strong>Luis Soares</strong>
       <div className='flex flex-col items-center'>
