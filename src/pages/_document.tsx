@@ -29,8 +29,8 @@ class MyDocument extends Document {
           <link rel="shortcut icon" href="/favicon.png" />
 
         </Head>
-        <body className='' >
-          <Main />
+        <body >
+          <Main  />
           <NextScript />
         </body>
       </Html>

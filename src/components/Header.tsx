@@ -11,7 +11,7 @@ export function Header() {
 
 
   return (
-    <header className="w-full  h-16 flex items-center justify-between px-4 bg-cyan-300">
+    <header className="w-full  h-16 flex items-center justify-between px-4 bg-gradient-to-tl from-cyan-900 via-cyan-600 to-cyan-200">
       <div className="flex items-center gap-4">
         <DarkMode />
         <LanguageSwitcher />

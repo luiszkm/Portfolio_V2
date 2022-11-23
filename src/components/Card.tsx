@@ -13,7 +13,8 @@ export function Card() {
 
 
   return (
-    <div className='w-full max-w-sm p-7 h-[480px] z-10 mt-36 flex flex-col items-center justify-between rounded-2xl border-2 border-black'>
+    <div className='w-full max-w-sm p-7 h-[480px] z-10 flex flex-col items-center justify-between 
+    rounded-2xl  bg-gradient-to-b from-gray-900 via-gray-400 to-gray-100'>
       <Avatar />
       <strong>Luis Soares</strong>
       <div className='flex flex-col items-center'>
@@ -23,9 +24,11 @@ export function Card() {
       <span className='flex items-center gap-4'><HiLocationMarker /> {t("location")} </span>
 
       <Stacks />
-      <nav className=' w-full flex items-center justify-center py-2 gap-4 border-t-2 border-black'>
+      <nav className=' w-full flex flex-col items-center'>
+        <div className=' w-full h-1 bg-gradient-to-tl rounded-t-full from-cyan-900 via-cyan-600 to-cyan-200'></div>
 
-        <a href="https://github.com/luiszkm"
+      <div className=' w-full flex items-center justify-center py-2 gap-4'>
+      <a href="https://github.com/luiszkm"
           aria-label='Read more about Luis in github'
           className='hover:animate-bounce'
           rel="noreferrer" target="_blank"><AiFillGithub size={24} />
@@ -44,6 +47,7 @@ export function Card() {
           aria-label=' Read more about Luis by downloading his resume'
           rel="noreferrer" target="_blank"><AiOutlineFileDone size={24} />
         </a>
+      </div>
       </nav>
     </div>
   )
