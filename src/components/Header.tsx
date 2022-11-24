@@ -17,7 +17,7 @@ export function Header() {
         <LanguageSwitcher />
       </div>
       <nav className="hidden md:flex">
-            <ul className='flex gap-6 text-center cursor-pointer'>
+            <ul className='flex gap-6 font-bold text-center cursor-pointer'>
               <li className='hover:text-white'><a href="#about">{t("about")}</a></li>
               <li className='hover:text-white'><a href="#skills">{t("skills")}</a></li>
               <li className='hover:text-white'><a href="#formation">{t("formation")}</a></li>

@@ -9,15 +9,15 @@ interface ButtonProps {
 export function Button({ children, PRIMARY = false }: ButtonProps) {
 
   return PRIMARY ? (
-    <button className="w-64 p-5 border-2 rounded-2xl text-white flex items-center gap-4 bg-gradient-to-tl from-cyan-900 via-cyan-600 to-cyan-200
-    hover:bg-transparent hover:border-black hover:text-black">
+    <button className="w-64 p-5 font-bold  rounded-2xl text-black flex items-center gap-4 bg-gradient-to-tl from-cyan-900 via-cyan-600 to-cyan-200
+    hover:to-blue-700 hover:from-black  hover:text-white hover:animate-bounce">
       <AiOutlineGithub size={24} />
       GitHub
     </button>
   ) :
     (
-      <button className=" w-64 p-5 border-2 border-black rounded-2xl flex items-center gap-4 
-       hover:bg-black  hover:text-white">
+      <button className=" w-64 p-5 text-white rounded-2xl flex items-center gap-4 font-bold bg-gradient-to-br  from-black to-blue-700
+       hover:bg-black  hover:to-cyan-200 hover:from-cyan-900  hover:text-black hover:animate-bounce">
         <IoEyeSharp size={24} />
         Demo
       </button>

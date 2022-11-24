@@ -28,20 +28,27 @@ export default function Home() {
         </section>
 
         <main className='flex flex-col items-center gap-5 md:flex-row '>
-          <section id="formation"
-            className="flex flex-col items-center gap-5 w-full max-w-sm p-7 h-[360px] border border-black rounded-2xl ">
-            <h3 className="font-extrabold text-xl bg-gradient-to-tl from-cyan-900 via-cyan-600 to-cyan-200 bg-clip-text text-transparent"
-            >Fromacao</h3>
-            <Formation />
-            <Formation />
-            <Formation />
-          </section>
 
-          <section id="skills"
-            className="flex flex-col items-center gap-5 w-full  p-7 h-[360px] border border-black rounded-2xl ">
-            <h3 className="font-extrabold text-2xl bg-gradient-to-tl from-cyan-900 via-cyan-600 to-cyan-200 bg-clip-text text-transparent">Skills</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis eius et doloremque consequuntur delectus suscipit expedita temporibus molestias nulla deleniti totam, dolores aspernatur odit tenetur officia praesentium mollitia magnam culpa.</p>
-          </section>
+          <div className="flex w-96 items-center justify-center rounded-2xl p-2 bg-gradient-to-br from-cyan-900 via-cyan-700 to-cyan-200">
+            <section id="formation"
+              className="flex flex-col items-center gap-5 w-full  p-7 h-[360px] bg-white rounded-2xl">
+              <h3 className="font-extrabold text-xl bg-gradient-to-tl from-cyan-900 via-cyan-600 to-cyan-200 bg-clip-text text-transparent"
+              >Fromacao</h3>
+              <Formation />
+              <Formation />
+              <Formation />
+            </section>
+          </div>
+
+          <div className="flex items-center justify-center rounded-2xl p-2 bg-gradient-to-br from-cyan-900 via-cyan-700 to-cyan-200">
+
+            <section id="skills"
+              className="flex flex-col items-center gap-5 w-full  p-7 h-[360px] rounded-2xl bg-white">
+              <h3 className="font-extrabold text-2xl bg-gradient-to-tl from-cyan-900 via-cyan-600 to-cyan-200 bg-clip-text text-transparent">Skills</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis eius et doloremque consequuntur delectus suscipit expedita temporibus molestias nulla deleniti totam, dolores aspernatur odit tenetur officia praesentium mollitia magnam culpa.</p>
+            </section>
+          </div>
+
         </main>
 
         <section id="project"  >

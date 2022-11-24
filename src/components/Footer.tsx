@@ -3,7 +3,7 @@ import { AiOutlineInstagram, AiOutlineWhatsApp, AiOutlineFacebook } from "react-
 export function Footer() {
   return (
     <div className="w-full flex items-center justify-between">
-      <footer className="w-full flex flex-col items-center gap-3 bg-cyan-500">
+      <footer className="w-full flex flex-col items-center gap-3 bg-gradient-to-tl from-cyan-900 via-cyan-600 to-cyan-200">
         <small>
         endereço
         </small>
