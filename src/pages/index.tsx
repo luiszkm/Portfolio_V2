@@ -15,7 +15,7 @@ export default function Home() {
 "></meta>
       </Head>
 
-      <main className='flex flex-col gap-4 max-w-7xl mx-auto items-center justify-center px-5 pb-8 '>
+      <main className='flex flex-col gap-4 max-w-7xl mx-auto items-center justify-center pb-8 '>
 
         <div className="w-full h-60 absolute top-16 flex items-center justify-center bg-[#070707] ">
           <Image className='relative h-60 top-0 object-cover md:object-fill' width={1280} height={208}
