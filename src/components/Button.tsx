@@ -16,7 +16,7 @@ export function Button({ children, PRIMARY = false }: ButtonProps) {
     </button>
   ) :
     (
-      <button className=" w-64 p-5 text-white rounded-2xl flex items-center gap-4 font-bold bg-gradient-to-br  from-black to-blue-700
+      <button className=" w-64 p-5 text-white rounded-2xl flex items-center gap-4 font-bold bg-gradient-to-br from-black to-blue-700
        hover:bg-black  hover:to-cyan-200 hover:from-cyan-900  hover:text-black hover:animate-bounce">
         <IoEyeSharp size={24} />
         Demo
