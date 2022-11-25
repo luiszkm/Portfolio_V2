@@ -21,7 +21,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang='PT-BR'>
+      <Html lang='PT-BR' className='dark'>
         <Head >
 
           <link rel="preconnect" href="https://fonts.googleapis.com" />

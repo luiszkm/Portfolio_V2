@@ -29,9 +29,10 @@ export default function Home() {
 
         <main className='flex flex-col items-center gap-5 md:flex-row '>
 
-          <div className="flex w-96 items-center justify-center rounded-2xl p-2 bg-gradient-to-br from-cyan-900 via-cyan-700 to-cyan-200">
+          <div className="flex w-96 items-center justify-center rounded-2xl p-2 bg-gradient-to-br from-cyan-900 via-cyan-700 to-cyan-200 first-letter: dark:from-purple-800 dark:via-Fuchsia-800 dark:to-pink-700">
             <section id="formation"
-              className="flex flex-col items-center gap-5 w-full  p-7 h-[360px] bg-white rounded-2xl">
+              className="flex flex-col items-center gap-5 w-full  p-7 h-[360px] bg-white rounded-2xl 
+              dark:bg-gradient-to-br dark:from-gray-800 dark:to-gray-700 dark:via-gray-800">
               <h3 className="font-extrabold text-xl bg-gradient-to-tl from-cyan-900 via-cyan-600 to-cyan-200 bg-clip-text text-transparent"
               >Fromacao</h3>
               <Formation />
@@ -40,10 +41,12 @@ export default function Home() {
             </section>
           </div>
 
-          <div className="flex items-center justify-center rounded-2xl p-2 bg-gradient-to-br from-cyan-900 via-cyan-700 to-cyan-200">
+          <div className="flex items-center justify-center rounded-2xl p-2 bg-gradient-to-br from-cyan-900 via-cyan-700 to-cyan-200 
+           dark:from-purple-800 dark:via-Fuchsia-800 dark:to-pink-700">
 
             <section id="skills"
-              className="flex flex-col items-center gap-5 w-full  p-7 h-[360px] rounded-2xl bg-white">
+              className="flex flex-col items-center gap-5 w-full  p-7 h-[360px] rounded-2xl  bg-white
+              dark:bg-gradient-to-br dark:from-gray-800 dark:to-gray-700 dark:via-gray-800">
               <h3 className="font-extrabold text-2xl bg-gradient-to-tl from-cyan-900 via-cyan-600 to-cyan-200 bg-clip-text text-transparent">Skills</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis eius et doloremque consequuntur delectus suscipit expedita temporibus molestias nulla deleniti totam, dolores aspernatur odit tenetur officia praesentium mollitia magnam culpa.</p>
             </section>

@@ -38,14 +38,21 @@ module.exports = {
         200: '#BEF3F5',
         100: '#DEF9FA',
       },
-      blue:{
+      blue: {
         800: '#1e40af',
         700: '#1d4ed8',
       },
 
-      yellow: {
-        500: '#eba417',
+      purple: {
+        800: '#6b21a8',
       },
+      pink: {
+        700: '#be123c'
+      },
+      Fuchsia: {
+        800: '#86198f'
+      }
+
 
     },
     extend: {

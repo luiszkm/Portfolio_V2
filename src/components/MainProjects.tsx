@@ -11,9 +11,11 @@ export function MainProjects() {
       <img className="rounded-t-2xl object-fill w-full h-80" width={265} height={256}
        src="https://portfolioluis.s3.sa-east-1.amazonaws.com/Cover-RocktNotes.png" alt="" />
 
-  <div className="h-1 w-full  bg-gradient-to-tl from-cyan-900 via-cyan-600 to-cyan-200"></div>
+  <div className="h-1 w-full  bg-gradient-to-tl from-cyan-900 via-cyan-600 to-cyan-200 
+   dark:from-purple-800 dark:via-Fuchsia-800 dark:to-pink-700"></div>
 
-      <div className="w-full flex flex-col items-center gap-4 p-3 rounded-b-2xl bg-gradient-to-t from-gray-800 via-gray-400 to-gray-100">
+      <div className="w-full flex flex-col items-center gap-4 p-3 rounded-b-2xl bg-gradient-to-t from-gray-800 via-gray-400 to-gray-100 
+       dark:from-gray-800 dark:to-gray-700 dark:via-gray-800">
 
         <div>
           <h3 className="font-bold ">RocketNotes</h3>
