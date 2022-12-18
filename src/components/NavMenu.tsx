@@ -22,7 +22,7 @@ export function NavMenu() {
           <GiHamburgerMenu className='cursor-pointer' onClick={() => setShowMenu(true)} />
         </div> :
         <div>
-          <nav className="w-full min-h-screen absolute top-0 left-0 bg-cyan-500 flex justify-center items-start py-16 z-20  ">
+          <nav className="w-full min-h-screen absolute top-0 left-0 bg-gradient-to-b from-cyan-900 via-cyan-600 to-cyan-200 flex justify-center items-start py-16 z-20  dark:from-gray-900 dark:to-gray-400 dark:via-gray-700 ">
             <AiOutlineClose className='cursor-pointer absolute top-3 right-3' onClick={() => setShowMenu(false)} />
             <ul className='flex flex-col gap-4 text-center cursor-pointer'>
               <li className='hover:text-white' onClick={() => setShowMenu(false)} >

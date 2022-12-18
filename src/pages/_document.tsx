@@ -28,9 +28,17 @@ class MyDocument extends Document {
           <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet" />
           <link rel="shortcut icon" href="/favicon.png" />
 
+          <meta name="author" content="Luis Soares" />
+          <meta name="description" content="Desenvolvedor web com 1 ano de experiência no mercado, focado em typescript, javascript, react, node, sql, html e css"/>
+          <meta name="keywords" content="sites, web, desenvolvimento, react, landing page,"/>
+          <meta http-equiv="content-language" content="pt-br, en-US" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          <meta name="copyright" content="© 2022 DevSoares" />
+          <meta name="generator" content="Next, React" />
+          <meta name="rating" content="general" />
         </Head>
         <body >
-          <Main  />
+          <Main />
           <NextScript />
         </body>
       </Html>

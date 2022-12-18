@@ -1,9 +1,11 @@
 import Image from "next/image";
 import Head from 'next/head'
+import { useTranslation } from "next-i18next";
 
 
 
 export default function Home() {
+  const { t } = useTranslation("header");
 
 
 
@@ -11,11 +13,10 @@ export default function Home() {
     <>
       <Head>
         <title>DevSoares</title>
-        <meta name="description" content="Luis is a web developer with 1 year of experience in the market, focused on typescript, javascript, react, node, sql, html and css
-"></meta>
+
       </Head>
 
-      <main className='flex flex-col gap-4 max-w-7xl mx-auto items-center justify-center pb-8 '>
+      <main className='flex flex-col gap-4 w-full max-w-7xl mx-auto items-center justify-center pb-8 '>
 
         <div className="w-full h-60 absolute top-16 flex items-center justify-center bg-[#070707] ">
           <Image className='relative h-60 top-0 object-cover md:object-fill' width={1280} height={208}
@@ -34,7 +35,7 @@ export default function Home() {
               className="flex flex-col items-center gap-5 w-full  p-7 h-[360px] bg-white rounded-2xl 
               dark:bg-gradient-to-br dark:from-gray-800 dark:to-gray-700 dark:via-gray-800">
               <h3 className="font-extrabold text-xl bg-gradient-to-tl from-cyan-900 via-cyan-600 to-cyan-200 bg-clip-text text-transparent"
-              >Fromacao</h3>
+              >{t("formation")}</h3>
               <Formation />
               <Formation />
               <Formation />
@@ -47,7 +48,7 @@ export default function Home() {
             <section id="skills"
               className="flex flex-col items-center gap-5 w-full  p-7 h-[360px] rounded-2xl  bg-white
               dark:bg-gradient-to-br dark:from-gray-800 dark:to-gray-700 dark:via-gray-800">
-              <h3 className="font-extrabold text-2xl bg-gradient-to-tl from-cyan-900 via-cyan-600 to-cyan-200 bg-clip-text text-transparent">Skills</h3>
+              <h3 className="font-extrabold text-2xl bg-gradient-to-tl from-cyan-900 via-cyan-600 to-cyan-200 bg-clip-text text-transparent">{t("skills")}</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis eius et doloremque consequuntur delectus suscipit expedita temporibus molestias nulla deleniti totam, dolores aspernatur odit tenetur officia praesentium mollitia magnam culpa.</p>
             </section>
           </div>
@@ -55,8 +56,8 @@ export default function Home() {
         </main>
 
         <section id="project"  >
-          <h2 className="font-extrabold text-xl bg-gradient-to-tl from-cyan-900 via-cyan-600 to-cyan-200 bg-clip-text text-transparent">Projetos</h2>
-          <div className="grid  gap-5  md:grid-flow-col">
+          <h2 className="font-extrabold text-xl  bg-gradient-to-tl from-cyan-900 via-cyan-600 to-cyan-200 bg-clip-text text-transparent">{t("projects")}</h2>
+          <div className="grid w-full  gap-5  xl:grid-flow-col">
 
             <MainProjects />
             <MainProjects />

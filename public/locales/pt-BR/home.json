@@ -1,3 +1,6 @@
 {
-  "greeting": "iae!"
+  "greeting": "iae!",
+  "about": "Sobre Mim",
+  "presentation":"Desenvolvedor web JavaScript com foco em ReactJs e NodeJs, estou sempre em busca de novas experiências e aprendizados para meu desenvolvimento profissional e principalmente pessoal. Graduando em Sistemas de Informação, apaixonado por desafios e tecnologias, músico nas horas vagas.",
+  "pretense": "Estou sempre em busca de aperfeiçoar meus conhecimentos de acordo com a demanda do mercado, além de estar buscando a Especialização do ecossistema JavaScript e Typescript e também da fluência do inglês"
 }

@@ -1,3 +1,6 @@
 {
-  "greeting": "Hello world!"
+  "greeting": "Hello world!",
+  "about": "About me ",
+  "presentation": "JavaScript web developer focusing on ReactJs and NodeJs, I'm always looking for new experiences and learning for my professional and mainly personal development. Graduating in Information Systems, passionate about challenges and technologies, musician in his spare time.",
+  "pretense": "I am always looking to improve my knowledge according to market demand, in addition to being looking for Specialization in the JavaScript and Typescript ecosystem and also in English fluency"
 }

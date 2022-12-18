@@ -5,6 +5,12 @@ module.exports = {
   ],
   darkMode: 'class',
   theme: {
+    screens: {
+      sm:'600px',
+      md:'800px',
+      lg:'1000px',
+      xl:'1200px',
+    },
     fontSize: {
       xs: 14,
       sm: 16,

@@ -6,9 +6,9 @@ import { Button } from "./Button";
 export function MainProjects() {
 
   return (
-    <div className="w-full max-w-2xl  flex flex-col items-center ">
+    <div className="w-full max-w-2xl flex flex-col items-center ">
 
-      <img className="rounded-t-2xl object-fill w-full h-80" width={265} height={256}
+      <Image className="rounded-t-2xl object-fill w-full h-80" width={265} height={256}
        src="https://portfolioluis.s3.sa-east-1.amazonaws.com/Cover-RocktNotes.png" alt="" />
 
   <div className="h-1 w-full  bg-gradient-to-tl from-cyan-900 via-cyan-600 to-cyan-200 
