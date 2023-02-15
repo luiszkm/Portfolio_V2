@@ -1,16 +1,22 @@
 
 import { AiOutlineCheck} from 'react-icons/ai'
 
+interface FormationProps {
+  date: string
+  url: string
+  name: string
+  institution: string
+}
 
-export function Formation () {
+export function Formation ({date, url, name, institution}: FormationProps) {
 
   return(
     <div className="flex flex-col items-center">
-      <strong className='flex items-center gap-1'> <AiOutlineCheck /> RocketSeat</strong>
-      <span>2022 - 2022</span>
-      <a href="https://app.rocketseat.com.br/explorer/certificates/498f92e9-e42a-40cb-acf4-e9ace5926991" 
+      <strong className='flex items-center gap-1'> <AiOutlineCheck />{institution}</strong>
+      <span>{date}</span>
+      <a href={url} 
       target='_blank' rel="noreferrer">
-        Explorer
+        {name}
       </a>
     </div>
   )

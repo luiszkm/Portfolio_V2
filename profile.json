@@ -1,0 +1,21 @@
+{
+  "formations": [
+    {
+      "institution": "RocketSeat",
+      "date": "2022",
+      "name": "Explorer",
+      "url":"https://app.rocketseat.com.br/explorer/certificates/498f92e9-e42a-40cb-acf4-e9ace5926991"
+
+    },
+    {
+      "institution": "RocketSeat",
+      "date": "2023",
+      "name": "Ignite-React",
+      "url":"https://app.rocketseat.com.br/certificates/d01bdfc8-c6e2-4318-873e-5eacb658dc71"
+
+    }
+  ],
+  "sills": [
+    
+  ]
+}
