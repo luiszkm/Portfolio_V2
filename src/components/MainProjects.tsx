@@ -1,7 +1,14 @@
 import Image from "next/image";
 import { Button } from "./Button";
 
-
+interface MainPRojectsProps {
+  urlImage: string;
+  urlGithub: string;
+  urlDemo: string;
+  name: string;
+  tech: string[]
+  description: string
+}
 
 export function MainProjects() {
 

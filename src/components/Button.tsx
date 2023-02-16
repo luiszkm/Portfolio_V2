@@ -13,7 +13,8 @@ export function Button({ children, PRIMARY = false }: ButtonProps) {
     hover:to-blue-700 hover:from-black  hover:text-white hover:animate-bounce dark:from-Fuchsia-800 dark:to-pink-700
     dark:hover:from-black dark:hover:to-pink-700 ">
       <AiOutlineGithub size={24} />
-      GitHub
+      {!children && "GitHub"}
+      
     </button>
   ) :
     (
@@ -21,7 +22,8 @@ export function Button({ children, PRIMARY = false }: ButtonProps) {
        hover:bg-black  hover:to-cyan-200 hover:from-cyan-900  hover:text-black hover:animate-bounce 
        dark:from-black dark:to-pink-700 dark:hover:from-Fuchsia-800 dark:hover:to-pink-700">
         <IoEyeSharp size={24} />
-        Demo
+        {!children && "Demo"}
+        
       </button>
     )
 }

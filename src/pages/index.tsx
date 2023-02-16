@@ -1,12 +1,19 @@
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
 import Image from "next/image";
 import Head from 'next/head'
-import { useTranslation } from "next-i18next";
+
+import { Card } from '../components/Card';
+import { About } from '../components/About';
+import { MainProjects } from '../components/MainProjects';
+import { Formation } from "../components/Formation";
+import { ProgressStatus } from "../components/ProgressStatus";
+
 import profile from "../../profile.json"
 
 export default function Home() {
   const { t } = useTranslation("header");
-
-
 
   return (
     <>
@@ -16,7 +23,6 @@ export default function Home() {
       </Head>
 
       <main className='flex flex-col gap-4 w-full max-w-7xl mx-auto items-center justify-center pb-8 '>
-
 
         <div className="w-full h-60 absolute top-16 flex items-center justify-center bg-[#070707] ">
           <Image className='relative h-60 top-0 object-cover md:object-fill' width={1280} height={208}
@@ -33,7 +39,7 @@ export default function Home() {
           <div className="flex w-96 items-center justify-center rounded-2xl p-2 bg-gradient-to-br from-cyan-900 via-cyan-700 to-cyan-200 first-letter: dark:from-purple-800 dark:via-Fuchsia-800 dark:to-pink-700">
 
             <section id="formation"
-              className="flex flex-col items-center gap-5 w-full  p-7 h-[400px] bg-white rounded-2xl 
+              className="flex flex-col items-center gap-5 w-full  p-7 h-[500px] bg-white rounded-2xl 
               dark:bg-gradient-to-br dark:from-gray-800 dark:to-gray-700 dark:via-gray-800">
               <h3 className="font-extrabold text-xl bg-gradient-to-tl from-cyan-900 via-cyan-600 to-cyan-200 bg-clip-text text-transparent"
               >{t("formation")}</h3>
@@ -45,7 +51,6 @@ export default function Home() {
                     name={formation.name}
                     url={formation.url}
                   />
-
                 ))
               }
             </section>
@@ -55,11 +60,13 @@ export default function Home() {
            dark:from-purple-800 dark:via-Fuchsia-800 dark:to-pink-700">
 
             <section id="skills"
-              className="flex flex-col items-center gap-5 w-full  p-7 h-full md:h-[400px] rounded-2xl  bg-white 
+              className="flex flex-col items-center gap-5 w-full  p-7 h-full md:h-[500px] rounded-2xl  bg-white 
               dark:bg-gradient-to-br dark:from-gray-800 dark:to-gray-700 dark:via-gray-800">
               <h3 className="font-extrabold text-2xl bg-gradient-to-tl from-cyan-900 via-cyan-600 to-cyan-200 bg-clip-text text-transparent">{t("skills")}</h3>
 
-                <ProgressStatus />
+                <ProgressStatus
+                 frontend={profile.sills.frontend} 
+                 backend={profile.sills.backend} />
             </section>
           </div>
 
@@ -75,18 +82,11 @@ export default function Home() {
         </section>
 
       </main>
-
     </>
   )
 }
 
 
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { Card } from '../components/Card';
-import { About } from '../components/About';
-import { MainProjects } from '../components/MainProjects';
-import { Formation } from "../components/Formation";
-import { ProgressStatus } from "../components/ProgressStatus";
 
 // export default function Home...
 
