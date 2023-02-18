@@ -1,6 +1,20 @@
 {
   "greeting": "Coleeer",
   "role":"Desenvolvedor Web",
-  "location": "Contagem, MG, Brasil"
-
+  "location": "Contagem, MG, Brasil",
+  "descriptionCoffeeDelivery": [
+    "Aplicação de uma cafeteria fictícia, que contém as seguintes funcionalidades:",
+    "Listagem de produtos (cafés) disponíveis para comprar",
+    "Adicionar uma quantidade específicas de itens no carrinho",
+    "Aumentar ou remover a quantidade de itens no carrinho",
+    "Formulário para o usuário preencher com validação",
+    "Exibir o total de itens no carrinho no Header",
+    "Exibir o valor total da soma de itens no carrinho multiplicados pelo valor"
+  ],
+  "descriptionGitHubBlog": [
+    "Aplicação que consome a API do github, que contém as seguintes funcionalidades:",
+    "Listagem do perfil , imagem, número de seguidores, nome e outras informações disponíveis pela API do GitHub.)",
+    "Listar e filtrar todas as issues do repositório com um pequeno resumo do conteúdo dela",
+    "Criar uma página para exibir um post (issue) completo"
+  ]
 }

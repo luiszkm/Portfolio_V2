@@ -45,7 +45,7 @@ export function Card() {
           className='hover:animate-bounce'
           rel="noreferrer" target="_blank"><AiOutlineInstagram size={24} />
         </a>
-        <a href="#" className='hover:animate-bounce'
+        <a href="/public/Cv-luis.pdf" className='hover:animate-bounce' download
           aria-label=' Read more about Luis by downloading his resume'
           rel="noreferrer" target="_blank"><AiOutlineFileDone size={24} />
         </a>

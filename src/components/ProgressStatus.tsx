@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react"
-import { Button } from './Button'
 
 
 type techDetails = {
@@ -22,9 +21,7 @@ export function ProgressStatus({ frontend, backend }: ProgressStatusProps) {
 
   let initialProgress = 1000
   const setInitialProgress = initialProgress - (progress * 10) / 1000 * 630
-  let test = false
 
-  console.log(frontend);
 
 
   function handleSetTech(value: number) {
@@ -35,11 +32,11 @@ export function ProgressStatus({ frontend, backend }: ProgressStatusProps) {
 
 
   return (
-    <section className=" w-full flex flex-col  md:flex-row sm:px-6 items-center gap-2 justify-between">
+    <section className=" w-full flex flex-col  md:flex-row lg:px-6 items-center gap-2 justify-between">
       <div className="flex w-full h-[400px] flex-col gap-4 items-center">
-        <div>
+        <div className="w-full">
 
-          <div className="flex items-center gap-1 w-full">
+          <div className="flex items-center gap-1 w-full  ">
 
             <button
               className={techSelected ?
@@ -49,7 +46,7 @@ export function ProgressStatus({ frontend, backend }: ProgressStatusProps) {
                border-cyan-700 shadow-2xl hover:border-cyan-900 dark:border-blue-800
                 dark:text-white dark:hover:bg-blue-800 transition-colors`}
 
-              onClick={() => handleSetTech(0)}>Front</button>
+              onClick={() => handleSetTech(0)}>Front-end</button>
             <button
               className={!techSelected ?
                 `w-full p-3 font-bold  rounded-md text-white  bg-blue-700 disabled:text-white  shadow-2xl hover:bg-blue-800 border-4 border-blue-700 `
@@ -58,7 +55,7 @@ export function ProgressStatus({ frontend, backend }: ProgressStatusProps) {
                border-cyan-700 shadow-2xl hover:border-cyan-900 dark:border-blue-800
                 dark:text-white dark:hover:bg-blue-800 transition-colors`}
 
-              onClick={() => handleSetTech(1)}>Back</button>
+              onClick={() => handleSetTech(1)}>Back-end</button>
 
           </div>
         </div>
@@ -67,14 +64,14 @@ export function ProgressStatus({ frontend, backend }: ProgressStatusProps) {
           {
             techSelected && frontend ?
               frontend?.map((tech) => (
-                <button className= "w-full bg-blue-700 p-3 rounded-md font-bold text-white focus-within:bg-blue-800 focus-within:text-gray-900"
-                 key={tech.tachName}
+                <button className="w-full bg-blue-700 p-3 rounded-md font-bold text-white focus-within:bg-blue-800 focus-within:text-gray-900"
+                  key={tech.tachName}
                   onClick={() => setProgress(tech.affinity)}
                 >{tech.tachName}</button>
               ))
               : backend?.map((tech) => (
-                <button className= "w-full bg-blue-700 p-3 rounded-md font-bold text-white focus-within:bg-blue-800 focus-within:text-gray-900"
-                key={tech.tachName}
+                <button className="w-full bg-blue-700 p-3 rounded-md font-bold text-white focus-within:bg-blue-800 focus-within:text-gray-900"
+                  key={tech.tachName}
                   onClick={() => setProgress(tech.affinity)}
                 >{tech.tachName}</button>
               ))

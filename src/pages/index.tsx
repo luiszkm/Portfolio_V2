@@ -12,6 +12,7 @@ import { ProgressStatus } from "../components/ProgressStatus";
 
 import profile from "../../profile.json"
 
+
 export default function Home() {
   const { t } = useTranslation("header");
 
@@ -36,7 +37,7 @@ export default function Home() {
 
         <main className='flex flex-col w-full items-center gap-5 md:flex-row '>
 
-          <div className="flex w-96 items-center justify-center rounded-2xl p-2 bg-gradient-to-br from-cyan-900 via-cyan-700 to-cyan-200 first-letter: dark:from-purple-800 dark:via-Fuchsia-800 dark:to-pink-700">
+          <div className="flex w-full sm:w-96 items-center justify-center rounded-2xl p-2 bg-gradient-to-br from-cyan-900 via-cyan-700 to-cyan-200 first-letter: dark:from-purple-800 dark:via-Fuchsia-800 dark:to-pink-700">
 
             <section id="formation"
               className="flex flex-col items-center gap-5 w-full  p-7 h-[500px] bg-white rounded-2xl 
@@ -60,7 +61,7 @@ export default function Home() {
            dark:from-purple-800 dark:via-Fuchsia-800 dark:to-pink-700">
 
             <section id="skills"
-              className="flex flex-col items-center gap-5 w-full  p-7 h-full md:h-[500px] rounded-2xl  bg-white 
+              className="flex flex-col items-center gap-5 w-full  p-3 md:p-7 h-full md:h-[500px] rounded-2xl  bg-white 
               dark:bg-gradient-to-br dark:from-gray-800 dark:to-gray-700 dark:via-gray-800">
               <h3 className="font-extrabold text-2xl bg-gradient-to-tl from-cyan-900 via-cyan-600 to-cyan-200 bg-clip-text text-transparent">{t("skills")}</h3>
 
@@ -72,12 +73,27 @@ export default function Home() {
 
         </main>
 
-        <section id="project"  >
-          <h2 className="font-extrabold text-xl  bg-gradient-to-tl from-cyan-900 via-cyan-600 to-cyan-200 bg-clip-text text-transparent">{t("projects")}</h2>
-          <div className="grid w-full  gap-5  xl:grid-flow-col">
+        <section id="project" className="w-full" >
+          <h2 className="font-extrabold text-xl ml-3 bg-gradient-to-tl from-cyan-900 via-cyan-600 to-cyan-200 bg-clip-text text-transparent">{t("projects")}</h2>
+          <div className="grid w-full px-1  gap-5  xl:grid-cols-2">
+            {
+              profile.projects.map((project) => (
+                <MainProjects key={project.name}
+                description={project.description}
+                name={project.name}
+                frontend={project.frontend}
 
-            <MainProjects />
-            <MainProjects />
+                 urlDemo={project.urlDemo}
+                 urlGithub={project.urlGithub}
+                 urlImage={project.urlImage}
+                 />
+
+              ))
+            }
+             
+           <a href="#">
+            Veja Mais
+           </a>
           </div>
         </section>
 

@@ -11,7 +11,7 @@ interface FormationProps {
 export function Formation ({date, url, name, institution}: FormationProps) {
 
   return(
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center w-full">
       <strong className='flex items-center gap-1'> <AiOutlineCheck />{institution}</strong>
       <span>{date}</span>
       <a href={url} 

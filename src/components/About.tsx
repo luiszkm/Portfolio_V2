@@ -4,7 +4,7 @@ export function About() {
   const { t } = useTranslation("home");
 
   return (
-    <div className="h-[424px] w-full flex items-center justify-center rounded-2xl p-2 md:mt-14 bg-gradient-to-br from-cyan-900 via-cyan-700 to-cyan-200
+    <div className="md:h-[424px] w-full flex items-center justify-center rounded-2xl p-2 md:mt-14 bg-gradient-to-br from-cyan-900 via-cyan-700 to-cyan-200
     dark:from-purple-800 dark:via-Fuchsia-800 dark:to-pink-700">
 
       <section className=" h-full w-full rounded-2xl p-4 bg-white 
